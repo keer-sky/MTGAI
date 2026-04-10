@@ -1,8 +1,8 @@
 # MTGAI
 Transformer-based Multi-task Multitasking generative AI
 
-This project implements a Transformer-based multi-task deep learning model for time series regression (future value prediction) and classification (sequence category recognition). The model adopts a multi-task learning framework with a task interaction module for feature sharing, supports dynamic task weight adjustment.
-Project Structure
+This project implements a Transformer-based multi-task deep learning model for time series regression (future value prediction) and classification (sequence category recognition). The model adopts a multi-task learning framework with a task interaction module for feature sharing, supports dynamic task weight adjustment.  
+Project Structure  
 .
 ├── dataset.py           # Dataset class: data loading, normalization, augmentation  
 ├── model.py             # Model definitions: positional encoding, task interaction, Transformer  
