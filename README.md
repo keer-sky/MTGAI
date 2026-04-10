@@ -1,7 +1,7 @@
 # MTGAI
 Transformer-based Multi-task Multitasking generative AI
 
-This project implements a Transformer-based multi-task deep learning model for time series regression (future value prediction) and classification (sequence category recognition). The model adopts a multi-task learning framework with a task interaction module for feature sharing, supports dynamic task weight adjustment.  
+This project implements a Transformer-based multi-task deep learning model for time series regression and classification. The model adopts a multi-task learning framework with a task interaction module for feature sharing, supports dynamic task weight adjustment.  
 Project Structure  
 ├── dataset.py           # Dataset class: data loading, normalization, augmentation  
 ├── model.py             # Model definitions: positional encoding, task interaction, Transformer  
@@ -12,10 +12,9 @@ Project Structure
 └── README.md            # This file  
 
 Features
-Multi-task learning: Simultaneously outputs regression predictions (future values) and classification results (sequence category).
+Multi-task learning: Simultaneously outputs regression predictions and classification results.  
 Transformer encoder: Captures long-range dependencies in time series.
-Task interaction module: Enhances information sharing between regression and classification via cross-attention and gating.
-Weighted sampling: Uses WeightedRandomSampler to balance training data and mitigate class imbalance.
+Task interaction module: Enhances information sharing between regression and classification via cross-attention and gating. 
 Cross-entropy loss: Standard cross-entropy loss for classification, with class weight support.
 Uncertainty weighting (optional): Automatically learns task weights for regression and classification.
 Data augmentation: Adds noise and scaling during training to improve generalization.
@@ -51,13 +50,11 @@ python main.py
 
 Training Strategy
 
-Loss functions: SmoothL1Loss for regression, CrossEntropyLoss for classification (class weights supported).
+Loss functions: SmoothL1Loss for regression, CrossEntropyLoss for classification.  
 
 Task weighting: Two modes:
 
 uncertainty_weighting=True: Automatically learns task weights based on homoscedastic uncertainty.
-
-False: Manual piecewise weights (first 30 epochs favor classification, later balanced).
 
 Optimizer: AdamW with cosine annealing learning rate scheduler (initial lr=0.0001).
 
