@@ -21,7 +21,7 @@ def fixed_main():
     print(f"使用设备: {device}")
 
     try:
-        excel_file = "AI_1_modified.xlsx"
+        excel_file = "AI_1.xlsx"
         train_df, val_df = prepare_datasets(excel_file, data_dir=data_dir, force_split=False)
     except FileNotFoundError:
         print(f"文件 {excel_file} 未找到，创建示例数据...")
