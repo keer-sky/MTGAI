@@ -35,7 +35,7 @@ pip install torch pandas numpy scikit-learn scipy openpyxl
 
 Usage
 
-1.Adjust configuration parameters
+1. Adjust configuration parameters
 Modify the parameters in the fixed_main() function inside main.py:
 
 sequence_length = 8        # Input sequence length (number of past time steps)
