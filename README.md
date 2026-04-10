@@ -11,14 +11,14 @@ Project Structure
 ├── main.py              # Main entry point: integrates all modules and runs training  
 └── README.md            # This file  
 
-Features
-Multi-task learning: Simultaneously outputs regression predictions and classification results.  
-Transformer encoder: Captures long-range dependencies in time series.
-Task interaction module: Enhances information sharing between regression and classification via cross-attention and gating. 
-Cross-entropy loss: Standard cross-entropy loss for classification, with class weight support.
-Uncertainty weighting (optional): Automatically learns task weights for regression and classification.
-Data augmentation: Adds noise and scaling during training to improve generalization.
-Early stopping & model saving: Saves the best model based on validation loss.
+Features  
+Multi-task learning: Simultaneously outputs regression predictions and classification results. 
+Transformer encoder: Captures long-range dependencies in time series. 
+Task interaction module: Enhances information sharing between regression and classification via cross-attention and gating.  
+Cross-entropy loss: Standard cross-entropy loss for classification, with class weight support. 
+Uncertainty weighting (optional): Automatically learns task weights for regression and classification. 
+Data augmentation: Adds noise and scaling during training to improve generalization. 
+Early stopping & model saving: Saves the best model based on validation loss. 
 
 Requirements
 
