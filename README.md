@@ -4,13 +4,13 @@ Transformer-based Multi-task Multitasking generative AI
 This project implements a Transformer-based multi-task deep learning model for time series regression (future value prediction) and classification (sequence category recognition). The model adopts a multi-task learning framework with a task interaction module for feature sharing, supports dynamic task weight adjustment.
 Project Structure
 .
-├── dataset.py           # Dataset class: data loading, normalization, augmentation
-├── model.py             # Model definitions: positional encoding, task interaction, Transformer
-├── trainer.py           # Trainer: training loop, validation, early stopping, scheduler
-├── data_utils.py        # Data splitting and saving/loading utilities
-├── utils.py             # Helper functions: sample data generation, checkpoint loading
-├── main.py              # Main entry point: integrates all modules and runs training
-└── README.md            # This file
+├── dataset.py           # Dataset class: data loading, normalization, augmentation  
+├── model.py             # Model definitions: positional encoding, task interaction, Transformer  
+├── trainer.py           # Trainer: training loop, validation, early stopping, scheduler  
+├── data_utils.py        # Data splitting and saving/loading utilities  
+├── utils.py             # Helper functions: sample data generation, checkpoint loading  
+├── main.py              # Main entry point: integrates all modules and runs training  
+└── README.md            # This file  
 
 Features
 Multi-task learning: Simultaneously outputs regression predictions (future values) and classification results (sequence category).
